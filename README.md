@@ -1,6 +1,6 @@
 ## Overview  
 
-Zh EMS2 is a full stack mechatronic systems project integrating:
+Solid Connections is a full stack mechatronic systems project integrating:
 
 - Mechanical design  
 - Electronics and PCB development  
@@ -35,7 +35,7 @@ This repository documents the entire development lifecycle from early concept th
 
 # 1. Project Vision  
 
-The objective of Zh EMS2 is to design and implement a complete mechatronic system that integrates mechanical, electrical and software components into a unified platform.
+The objective of Solid Connections is to design and implement a complete mechatronic system that integrates mechanical, electrical and software components into a unified platform.
 
 Core goals:
 
@@ -329,7 +329,7 @@ Key engineering lessons from this project:
 
 # Conclusion  
 
-Zh EMS2 represents a complete multidisciplinary engineering effort combining:
+Solid Connections represents a complete multidisciplinary engineering effort combining:
 
 - Mechanical design  
 - Electronics engineering  
