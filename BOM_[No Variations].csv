@@ -1,0 +1,31 @@
+,Line #,Name,Description,Designator,Revision ID,Revision Status,Quantity,Manufacturer 1,Manufacturer Part Number 1,Manufacturer Lifecycle 1,Supplier 1,Supplier Part Number 1,Supplier Unit Price 1,Supplier Subtotal 1
+,17,5006,PC TEST POINT COMPACT BLACK,"B-1, B+1, J2, J3, J5, J7, J9, J10",CMP-19636-000022-1,Up to date,8,Keystone Electronics,5006,Volume Production,Digikey,36-5006-ND,0.40673,16.26934
+,9,0.1uF,CAP CER 0.1UF 50V X7R 0805,"C3, C9, C15",CMP-03020-000950-1,Up to date,3,KEMET,C0805C104J5RACTU,Volume Production,Digikey,399-C0805C104J5RACTUDKR-ND,0.1302,1.95306
+,10,"CUS08F30,H3F","CUS08F30,H3F Rectifier Diode, Schottky, 1 Phase, 1 Element, 0.8A, 30V V(RRM), Silicon","D2, D6",CMP-00375-53632863-1,Up to date,2,Toshiba,"CUS08F30,H3F",Volume Production,Digikey,CUS08F30H3FCT-ND,0.22941,2.29408
+,16,61302011821,,"J11, J12",CMP-1502-01348-3,Up to date,2,Wurth Electronics,61302011821,Volume Production,Digikey,732-61302011821-ND,1.28654,12.86542
+,3,61300411121,,P1,CMP-1502-01064-3,Up to date,1,Wurth Electronics,61300411121,Volume Production,Digikey,732-5317-ND,0.26351,1.31754
+,11,DMN2004K-7,MOSFET N-CH 20V 0.63A SOT23-3,"Q3, Q4, Q5",CMP-12801-000057-1,Up to date,3,Diodes,DMN2004K-7,Volume Production,Digikey,DMN2004KDICT-ND,0.29606,4.4409
+,24,"SSM3J328R,LF","TOSHIBA Field-Effect Transistor Silicon P-Channel MOS Type (U-MOS VI), 20 V, -55 to 125 degC, 3-Pin SOTFL, RoHS, Tape and Reel",Q1,CMP-2100-03686-1,Up to date,1,Toshiba,"SSM3J328R,LF",Volume Production,Digikey,SSM3J328RLFCT-ND,0.65102,3.25511
+,22,MMBT3904LT1G,"General Purpose Transistor, NPN Silicon, 3-Pin SOT-23, Pb-Free, Tape and Reel",Q2,CMP-1048-00631-1,Up to date,1,ON Semiconductor,MMBT3904LT1G,Volume Production,Digikey,MMBT3904LT1GOSCT-ND,0.18601,0.93003
+,13,RMCF0805JT3K00,3kΩ ±5% 0.125W 0805 Thick Film Chip Resistor AEC-Q200 compliant,R12,CMP-26527-006913-1,Up to date,1,Stackpole Electronics,RMCF0805JT3K00,Volume Production,Digikey,RMCF0805JT3K00CT-ND,0.0341,0.34101
+,19,CL-SB-22A-11T,SWITCH SLIDE DPDT 200MA 12V,SW1,CMP-71745-000011-1,Up to date,1,Nidec Copal,CL-SB-22A-11T,Unknown,Digikey,563-1340-1-ND,2.23207,11.16037
+,8,LM324DR2G,"Single Supply Quad Operational Amplifier, 3 to 32 V, 0 to 70 degC, 14-Pin SOIC, Pb-Free, Tape and Reel","U1, U2",CMP-1310-00171-1,Up to date,2,ON Semiconductor,LM324DR2G,Volume Production,Digikey,LM324DR2GOSCT-ND,0.30536,3.0536
+,7,LD1117S33CTR,IC REG LINEAR 3.3V 800MA SOT223,U3,CMP-0244-00307-2,Up to date,1,STMicroelectronics,LD1117S33CTR,Volume Production,Digikey,497-1241-1-ND,0.49602,2.48008
+,14,"300Ω, RMCF0805JT300R","300Ω ±5% 0.125W 0805 Thick Film Chip Resistor AEC-Q200 compliant, RMCF0805JT300R","R1, R13, R18, R21, R25",CMP-26527-003681-1,Up to date,5,Stackpole Electronics,RMCF0805JT300R,Volume Production,Digikey,738-RMCF0805JT300RCT-ND,0.0341,0.85253
+,,"10k, RMCF0805FT10K0","RES 10K OHM 1% 1/8W 0805, RMCF0805FT10K0","R15, R20, R23, R24, R26, R28, R29",CMP-26527-000121-1,Up to date,7,Stackpole Electronics,RMCF0805FT10K0,Volume Production,Digikey,RMCF0805FT10K0CT-ND,0.03875,1.35629
+,,"RMCF0805FG100K, 100k",100kΩ ±1% 0.125W 0805 Thick Film Chip Resistor AEC-Q200 compliant,"R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R14",CMP-26527-003818-1,Up to date,11,Stackpole Electronics,RMCF0805FG100K,Volume Production,Digikey,RMCF0805FG100KCT-ND,0.0186,1.86006
+,,RMCF0805FT1K00,1kΩ ±1% 0.125W 0805 Thick Film Chip Resistor AEC-Q200 compliant,R16,CMP-26527-002331-1,Up to date,1,Stackpole Electronics,RMCF0805FT1K00,Volume Production,Digikey,RMCF0805FT1K00CT-ND,0.03875,0.38751
+,,100Ω,"100Ω ±1% 0.125W 0805 Thick Film Chip Resistor AEC-Q200 compliant, RMCF0805FT100R","R19, R22, R27",CMP-26527-001731-1,Up to date,3,Stackpole Electronics,RMCF0805FT100R,Volume Production,Digikey,RMCF0805FT100RCT-ND,0.03875,0.58127
+,,33nF,"CAP CER 0.033UF 50V X7R 0805, CC0805KRX7R9BB333","C1, C5, C6, C10, C11, C14",CMP-03422-000099-1,Up to date,6,Yageo,CC0805KRX7R9BB333,Volume Production,Digikey,311-1374-1-ND,0.09145,2.74359
+,,LTST-C150KRKT,LED RED CLEAR 1206 SMD,"D1, D3, D4",CMP-2000-06617-2,Up to date,3,Vishay Lite-On,LTST-C150KRKT,Volume Production,Digikey,160-1405-1-ND,0.19376,2.90635
+,,C0805C103J5RAC7210,CAP CER SMD 0805 .01UF X7R 5% 50,C17,CMP-2007-01173-3,Up to date,1,KEMET,C0805C103J5RAC7210,Volume Production,Digikey,399-17616-1-ND,0.06975,0.69752
+,,PJ-102AH,"Power Barrel Con, 2.0mm ID, 5.5mm OD, 5A",J6,,,1,Same Sky,PJ-102AH,Unknown,Digikey,CP-102AH-ND,1.17804,5.89019
+,,20021221-00006C4LF,,J1,,,1,Amphenol ICC / FCI,20021221-00006C4LF,Unknown,Digikey,609-3699-1-ND,1.10054,5.50268
+,,10uF,CAP CER 10UF 10V X7R 0805,C16,CMP-03020-034708-1,Up to date,1,KEMET,C0805C106J8RACAUTO,Unknown,Digikey,399-15693-1-ND,1.36404,6.82022
+,,TVS,"Transient Voltage Suppressor, 6.40 to 231 V, 10 V Stand-off Voltage, Uni-Directional, -55 to 155 degC, 2-pin DO-214AC, Pb-Free, Tape and Reel",D5,CMP-0548-00238-2,Up to date,1,Vishay Semiconductors,SMAJ10A-E3/61,Volume Production,Digikey,SMAJ10A-E3/61GICT-ND,0.49602,2.48008
+,,ERJ-6GEYJ563V,,R17,CMP-2001-00434-1,Up to date,1,Panasonic,ERJ-6GEYJ563V,Volume Production,Digikey,P56KACT-ND,0.06355,0.63552
+,,5414373-1,CONN BNC JACK R/A 50 OHM PCB,J4,CMP-03357-000008-1,Up to date,1,TE Connectivity,5414373-1,Volume Production,Digikey,A32274-ND,7.81226,39.06129
+,,WP7113SURC,WP7113SURC Red 5 mm 20 º Water Clear 3800 mcd 1.9 V Solid State LED Lamp - T-1 3/4,"D7, D8, D9",CMP-00682-00869413-1,Up to date,3,Kingbright,WP7113SURC,Volume Production,Digikey,754-1279-ND,0.40146,6.02195
+,,SF-1206S050-2,FUSE BOARD MNT 500MA 63VDC 1206,F1,CMP-07399-000002-1,Up to date,1,Bourns,SF-1206S050-2,Volume Production,Digikey,SF-1206S050-2CT-ND,0.78123,3.90613
+,,2-1825910-7,SWITCH TACTILE SPST-NO 0.05A 24V,"SW2, SW3, SW4",CMP-03402-000004-1,Up to date,3,TE Connectivity,2-1825910-7,Volume Production,Digikey,450-1642-ND,0.19531,2.9296
+,,B2B-XH-AM(LF)(SN),CONN HEADER VERT 2POS 2.5MM,J8,CMP-17439-000037-1,Up to date,1,JST,B2B-XH-AM(LF)(SN),Unknown,,,,
