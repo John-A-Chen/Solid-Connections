@@ -1,9 +1,3 @@
-```
-# Zh EMS2  
-## Extended Mechatronic Systems Integration Project  
-
----
-
 ## Overview  
 
 Zh EMS2 is a full stack mechatronic systems project integrating:
@@ -345,4 +339,3 @@ Zh EMS2 represents a complete multidisciplinary engineering effort combining:
 - Structured documentation  
 
 The repository captures not only the final system but the engineering reasoning, iteration and validation that led to it.
-```
