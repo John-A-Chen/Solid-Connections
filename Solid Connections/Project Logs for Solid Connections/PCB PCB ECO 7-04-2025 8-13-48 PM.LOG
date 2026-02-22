@@ -1,0 +1,25 @@
+Change Footprint: Footprint Not Found CAPC2013X94X50ML20T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Component Designator: OldDesignator=D3 NewDesignator=D5
+Added Pin To Net: NetName=NetR1_2 Pin=R4-1
+Added Pin To Net: NetName=+3V3 Pin=R5-1
+Added Pin To Net: NetName=NetC3_1 Pin=R7-2
+Added Pin To Net: NetName=NetR28_1 Pin=U1-12
+Added Pin To Net: NetName=NetC3_2 Pin=U3-6
+Change Net Name : Old Net Name=NetD3_2 New Net Name=NetD5_2
+Added Member To Class: ClassName=Sheet2 Member=Component D5 CUS08F30,H3F

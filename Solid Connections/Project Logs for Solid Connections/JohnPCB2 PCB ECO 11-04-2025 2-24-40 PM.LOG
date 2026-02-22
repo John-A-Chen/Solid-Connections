@@ -1,0 +1,168 @@
+Removed Pin From Net: NetName=GND Pin=C7-1
+Removed Pin From Net: NetName=NetC7_2 Pin=C7-2
+Removed Pin From Net: NetName=NetC1_1 Pin=R2-2
+Removed Pin From Net: NetName=NetC1_1 Pin=R3-1
+Removed Pin From Net: NetName=NetC2_1 Pin=R3-2
+Removed Pin From Net: NetName=GND Pin=R4-2
+Removed Pin From Net: NetName=+3V3 Pin=R5-1
+Removed Pin From Net: NetName=GND Pin=R6-2
+Removed Pin From Net: NetName=NetC3_1 Pin=R7-2
+Removed Pin From Net: NetName=NetC3_1 Pin=R8-1
+Removed Pin From Net: NetName=NetC4_1 Pin=R8-2
+Removed Pin From Net: NetName=GND Pin=R9-2
+Removed Pin From Net: NetName=+3V3 Pin=R10-1
+Removed Pin From Net: NetName=GND Pin=R11-2
+Removed Pin From Net: NetName=GND Pin=R17-1
+Removed Pin From Net: NetName=NetC9_1 Pin=R17-2
+Removed Pin From Net: NetName=NetC5_1 Pin=R28-2
+Removed Pin From Net: NetName=NetC5_1 Pin=R29-1
+Removed Pin From Net: NetName=NetC6_1 Pin=R29-2
+Removed Pin From Net: NetName=NetJ1_4 Pin=U1-5
+Removed Pin From Net: NetName=NetC1_2 Pin=U3-1
+Removed Pin From Net: NetName=NetC1_2 Pin=U3-2
+Removed Pin From Net: NetName=NetC2_1 Pin=U3-3
+Removed Pin From Net: NetName=NetC5_2 Pin=U3-8
+Removed Pin From Net: NetName=NetC5_2 Pin=U3-9
+Removed Pin From Net: NetName=NetC6_1 Pin=U3-10
+Removed Member From Class: ClassName=Sheet4 Member=J5
+Change Component Footprint: Designator=C7 Old Footprint=CAPC2013X94X50LL20T25 New Footprint=FP-C0805C-DN-MFG
+Change Component Footprint: Designator=R2 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R3 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R4 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R5 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R6 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R7 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R8 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R10 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R28 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-MFG
+Change Component Footprint: Designator=R29 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-RMCF0805-MFG
+Change Component Footprint: Designator=R9 Old Footprint=FP-RMCF0805-MFG New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R11 Old Footprint=FP-RMCF0805-MFG New Footprint=FP-RMCF0805-IPC_C
+Change Component Footprint: Designator=R17 Old Footprint=RESC2013X70X40ML20T20 New Footprint=FP-RMCF0805-MFG
+Change Component Comment : Designator=C7 Old Comment=08055C104JAZ2A New Comment=0.1UF
+Change Component Comment : Designator=C9 Old Comment=C0805C103J5RAC7210 New Comment=0.01UF
+Change Component Comment : Designator=C8 Old Comment=C0805C104J5RACTU New Comment=0.1UF
+Change Component Comment : Designator=C1 Old Comment=CC0805KRX7R9BB333 New Comment=33nF
+Change Component Comment : Designator=C2 Old Comment=CC0805KRX7R9BB333 New Comment=33nF
+Change Component Comment : Designator=C3 Old Comment=CC0805KRX7R9BB333 New Comment=33nF
+Change Component Comment : Designator=C4 Old Comment=CC0805KRX7R9BB333 New Comment=33nF
+Change Component Comment : Designator=C5 Old Comment=CC0805KRX7R9BB333 New Comment=33nF
+Change Component Comment : Designator=C6 Old Comment=CC0805KRX7R9BB333 New Comment=33nF
+Change Component Comment : Designator=R17 Old Comment=ERJ-6GEYJ563V New Comment=5.6k
+Change Component Comment : Designator=R14 Old Comment=RMCF0805FG100K New Comment=100k
+Change Component Comment : Designator=R16 Old Comment=RMCF0805FT1K00 New Comment=1k
+Change Component Comment : Designator=R15 Old Comment=RMCF0805FT10K0 New Comment=10k
+Change Component Comment : Designator=R20 Old Comment=RMCF0805FT10K0 New Comment=10k
+Change Component Comment : Designator=R23 Old Comment=RMCF0805FT10K0 New Comment=10k
+Change Component Comment : Designator=R24 Old Comment=RMCF0805FT10K0 New Comment=10k
+Change Component Comment : Designator=R25 Old Comment=RMCF0805FT10K0 New Comment=10k
+Change Component Comment : Designator=R9 Old Comment=RMCF0805FT10K0 New Comment=100k
+Change Component Comment : Designator=R11 Old Comment=RMCF0805FT10K0 New Comment=100k
+Change Component Comment : Designator=R19 Old Comment=RMCF0805FT100R New Comment=100O
+Change Component Comment : Designator=R22 Old Comment=RMCF0805FT100R New Comment=100O
+Change Component Comment : Designator=R27 Old Comment=RMCF0805FT100R New Comment=100O
+Change Component Comment : Designator=R12 Old Comment=RMCF0805JT3K00 New Comment=3k
+Change Component Comment : Designator=R28 Old Comment=RMCF0805JT160K New Comment=10k
+Change Component Comment : Designator=R29 Old Comment=RMCF0805JT160K New Comment=10k
+Change Component Comment : Designator=R2 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R3 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R4 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R5 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R6 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R7 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R8 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R10 Old Comment=RMCF0805JT160K New Comment=100k
+Change Component Comment : Designator=R1 Old Comment=RMCF0805JT300R New Comment=300O
+Change Component Comment : Designator=R13 Old Comment=RMCF0805JT300R New Comment=300O
+Change Component Comment : Designator=R18 Old Comment=RMCF0805JT300R New Comment=300O
+Change Component Comment : Designator=R21 Old Comment=RMCF0805JT300R New Comment=300O
+Change Component Comment : Designator=R26 Old Comment=RMCF0805JT300R New Comment=300O
+Change Component Designator: OldDesignator=J2 NewDesignator=J5
+Change Component Designator: OldDesignator=J3 NewDesignator=J2
+Change Component Designator: OldDesignator=J4 NewDesignator=J3
+Change Component Designator: OldDesignator=J5 NewDesignator=J6
+Change Component Designator: OldDesignator=J6 NewDesignator=J7
+Change Component Designator: OldDesignator=J7 NewDesignator=J8
+Change Component Designator: OldDesignator=J8 NewDesignator=J9
+Change Component Designator: OldDesignator=J9 NewDesignator=J10
+Change Component Designator: OldDesignator=J10 NewDesignator=J11
+Change Component Designator: OldDesignator=U2 NewDesignator=U3
+Change Component Designator: OldDesignator=U3 NewDesignator=U2
+Added Pin To Net: NetName=NetC7_2 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=+3V3 Pin=R2-1
+Added Pin To Net: NetName=NetC1_1 Pin=R3-2
+Added Pin To Net: NetName=NetC1_1 Pin=R4-1
+Added Pin To Net: NetName=NetC2_1 Pin=R4-2
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=+3V3 Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=NetC3_1 Pin=R8-2
+Added Pin To Net: NetName=NetC3_1 Pin=R9-1
+Added Pin To Net: NetName=NetC4_1 Pin=R9-2
+Added Pin To Net: NetName=NetC5_1 Pin=R10-2
+Added Pin To Net: NetName=NetC5_1 Pin=R11-1
+Added Pin To Net: NetName=NetC6_1 Pin=R11-2
+Added Pin To Net: NetName=NetC9_1 Pin=R17-1
+Added Pin To Net: NetName=GND Pin=R17-2
+Added Pin To Net: NetName=GND Pin=R28-2
+Added Pin To Net: NetName=GND Pin=R29-2
+Added Pin To Net: NetName=NetC2_1 Pin=U1-5
+Added Pin To Net: NetName=NetC1_2 Pin=U1-6
+Added Pin To Net: NetName=NetC1_2 Pin=U1-7
+Added Pin To Net: NetName=NetC6_1 Pin=U1-12
+Added Pin To Net: NetName=NetC5_2 Pin=U1-13
+Added Pin To Net: NetName=NetC5_2 Pin=U1-14
+Added Pin To Net: NetName=NetJ1_4 Pin=U2-3
+Change Net Name : Old Net Name=NetC7_2 New Net Name=NetC7_1
+Change Net Name : Old Net Name=NetJ5_1 New Net Name=NetJ6_1
+Change Net Name : Old Net Name=NetJ9_3 New Net Name=NetJ10_3
+Change Net Name : Old Net Name=NetJ9_6 New Net Name=NetJ10_6
+Change Net Name : Old Net Name=NetJ9_13 New Net Name=NetJ10_13
+Change Net Name : Old Net Name=NetJ10_6 New Net Name=NetJ11_6
+Change Net Name : Old Net Name=NetJ10_10 New Net Name=NetJ11_10
+Change Net Name : Old Net Name=NetJ10_11 New Net Name=NetJ11_11
+Change Net Name : Old Net Name=NetJ10_12 New Net Name=NetJ11_12
+Change Net Name : Old Net Name=NetU3_13 New Net Name=NetU2_13
+Added Pin To Net: NetName=NetJ11_8 Pin=J11-8
+Added Pin To Net: NetName=NetJ11_8 Pin=R27-1
+Added Pin To Net: NetName=NetJ11_8 Pin=R28-1
+Added Net: Name=NetJ11_8
+Added Pin To Net: NetName=NetJ11_9 Pin=J11-9
+Added Pin To Net: NetName=NetJ11_9 Pin=R29-1
+Added Pin To Net: NetName=NetJ11_9 Pin=SW4-B2
+Added Net: Name=NetJ11_9
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=R5-1
+Added Pin To Net: NetName=NetR2_2 Pin=U2-10
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=U1-1
+Added Pin To Net: NetName=NetR3_1 Pin=U1-2
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=R7-1
+Added Pin To Net: NetName=NetR6_2 Pin=U2-12
+Added Net: Name=NetR6_2
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_1 Pin=U2-1
+Added Pin To Net: NetName=NetR8_1 Pin=U2-2
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=NetR10_1 Pin=R10-1
+Added Pin To Net: NetName=NetR10_1 Pin=U1-8
+Added Pin To Net: NetName=NetR10_1 Pin=U1-9
+Added Net: Name=NetR10_1
+Added Pin To Net: NetName=NetU2_8 Pin=U2-8
+Added Pin To Net: NetName=NetU2_8 Pin=U2-9
+Added Net: Name=NetU2_8
+Added Member To Class: ClassName=Sheet4 Member=Component J3 5006
+Added Member To Class: ClassName=Sheet2 Member=Component J6 PJ-102AH
+Added Member To Class: ClassName=Sheet2 Member=Component J8 5006
+Added Member To Class: ClassName=Top Level Member=Component J10 61302011821
+Added Member To Class: ClassName=Top Level Member=Component J11 61302011821
+Added Member To Class: ClassName=Sheet4 Member=Component J? CON BNC JACK R/A 50 OHM PCB
+Added Room: Name=r
+Added Room: Name=Sheet2
+Added Room: Name=Sheet3
+Added Room: Name=Sheet4
+Added Room: Name=Top Level

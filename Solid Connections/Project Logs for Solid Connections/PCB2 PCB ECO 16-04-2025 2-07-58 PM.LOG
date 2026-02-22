@@ -1,0 +1,83 @@
+Change Component Footprint: Designator=D7 Old Footprint=FP-LTST-C150KRKT-MFG New Footprint=FP-WP7113SURC-MFG
+Change Component Footprint: Designator=D8 Old Footprint=FP-LTST-C150KRKT-MFG New Footprint=FP-WP7113SURC-MFG
+Change Component Footprint: Designator=D9 Old Footprint=FP-LTST-C150KRKT-MFG New Footprint=FP-WP7113SURC-MFG
+Change Component Comment : Designator=D7 Old Comment=LTST-C150KRKT New Comment=WP7113SURC
+Change Component Comment : Designator=D8 Old Comment=LTST-C150KRKT New Comment=WP7113SURC
+Change Component Comment : Designator=D9 Old Comment=LTST-C150KRKT New Comment=WP7113SURC
+Change Managed Component Library Link : Designator=D7 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=24CFA3E8-A7DA-48F2-93A8-BB645594A8A5 New ItemGUID=4BD80296-BCDC-48F3-9566-F0B4F21C5E2A Old RevisionGUID=DCAC00E4-F7B9-4437-B0EA-BF10D654C247 New RevisionGUID=52172846-EE56-475F-BE84-FA2A13F1B585
+Change Managed Component Library Link : Designator=D8 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=24CFA3E8-A7DA-48F2-93A8-BB645594A8A5 New ItemGUID=4BD80296-BCDC-48F3-9566-F0B4F21C5E2A Old RevisionGUID=DCAC00E4-F7B9-4437-B0EA-BF10D654C247 New RevisionGUID=52172846-EE56-475F-BE84-FA2A13F1B585
+Change Managed Component Library Link : Designator=D9 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=24CFA3E8-A7DA-48F2-93A8-BB645594A8A5 New ItemGUID=4BD80296-BCDC-48F3-9566-F0B4F21C5E2A Old RevisionGUID=DCAC00E4-F7B9-4437-B0EA-BF10D654C247 New RevisionGUID=52172846-EE56-475F-BE84-FA2A13F1B585
+Change component parameters: Designator = "D7" ("D7"); Footprint = "FP-LTST-C150KRKT-MFG"; UniqueID = "\VZOEORRK\SIQCWNGR" ("\VZOEORRK\SIQCWNGR")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "Radial"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dominant Wavelength"; Value = "630nm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "1.9V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Illumination Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lens Style"; Value = "Clear, Dome"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Luminous Intensity"; Value = "1.4cd"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Junction Temperature (Tj)"; Value = "115°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "869413"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Dissipation"; Value = "75mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reverse Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Viewing Angle"; Value = "20°"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wavelength"; Value = "628nm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D8" ("D8"); Footprint = "FP-LTST-C150KRKT-MFG"; UniqueID = "\VZOEORRK\GVGWDYYD" ("\VZOEORRK\GVGWDYYD")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "Radial"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dominant Wavelength"; Value = "630nm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "1.9V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Illumination Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lens Style"; Value = "Clear, Dome"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Luminous Intensity"; Value = "1.4cd"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Junction Temperature (Tj)"; Value = "115°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "869413"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Dissipation"; Value = "75mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reverse Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Viewing Angle"; Value = "20°"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wavelength"; Value = "628nm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D9" ("D9"); Footprint = "FP-LTST-C150KRKT-MFG"; UniqueID = "\VZOEORRK\YOFQCCGP" ("\VZOEORRK\YOFQCCGP")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "Radial"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dominant Wavelength"; Value = "630nm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Voltage"; Value = "1.9V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Illumination Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lens Style"; Value = "Clear, Dome"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Luminous Intensity"; Value = "1.4cd"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Junction Temperature (Tj)"; Value = "115°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "869413"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Dissipation"; Value = "75mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reverse Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Test Current"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Viewing Angle"; Value = "20°"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wavelength"; Value = "628nm"; VariantName = "[No Variations]"
+Added Room: Name=r
+Added Room: Name=Sheet2
+Added Room: Name=Sheet3
+Added Room: Name=Sheet4
+Added Room: Name=Top Level

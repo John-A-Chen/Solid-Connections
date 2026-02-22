@@ -1,0 +1,614 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mm').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD25\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4/06/2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:17:29 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc">C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table><a name="ID0SXCOZJNKIHDJYLWABUWMB2LJKEF1CYFJ0TE24G1EBZ2DUI50PYL"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=170.827mil|Location2.X=2016.575mil|Location1.Y=196.062mil|Location2.Y=2293.43mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=170.827mil|Location2.X=2016.575mil|Location1.Y=196.062mil|Location2.Y=2293.43mil|Absolute=True">+3V3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=39.7mil|Location2.X=207.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=39.7mil|Location2.X=207.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True">+5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=639.702mil|Location2.X=707.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=639.702mil|Location2.X=707.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">0</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=739.7mil|Location2.X=1108.268mil|Location1.Y=18.898mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=739.7mil|Location2.X=1108.268mil|Location1.Y=18.898mil|Location2.Y=1480.771mil|Absolute=True">12</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16013267">40.6737mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=333.858mil|Location2.X=872.11mil|Location1.Y=18.898mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=333.858mil|Location2.X=872.11mil|Location1.Y=18.898mil|Location2.Y=1480.771mil|Absolute=True">13</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="19653342">49.9195mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=839.7mil|Location2.X=1698.819mil|Location1.Y=18.897mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=839.7mil|Location2.X=1698.819mil|Location1.Y=18.897mil|Location2.Y=1480.771mil|Absolute=True">14</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="20827384">52.9016mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=439.702mil|Location2.X=507.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=439.702mil|Location2.X=507.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">15</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=839.702mil|Location2.X=907.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=839.702mil|Location2.X=907.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">16</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=939.702mil|Location2.X=1007.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=939.702mil|Location2.X=1007.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">17</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1139.702mil|Location2.X=1207.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1139.702mil|Location2.X=1207.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">18</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.702mil|Location2.X=1307.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.702mil|Location2.X=1307.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">19</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=539.702mil|Location2.X=607.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=539.702mil|Location2.X=607.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1097.182mil|Location2.X=1619mil|Location1.Y=1696.788mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1097.182mil|Location2.X=1619mil|Location1.Y=1696.788mil|Location2.Y=2514.236mil|Absolute=True">21</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="10148852">25.7781mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1197.182mil|Location2.X=1807.544mil|Location1.Y=1696.788mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1197.182mil|Location2.X=1807.544mil|Location1.Y=1696.788mil|Location2.Y=2514.236mil|Absolute=True">22</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9720975">24.6913mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1113.717mil|Location2.X=1907.544mil|Location1.Y=2131.827mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1113.717mil|Location2.X=1907.544mil|Location1.Y=2131.827mil|Location2.Y=2514.236mil|Absolute=True">23</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8662335">22.0023mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1139.7mil|Location2.X=1997.285mil|Location1.Y=427.144mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1139.7mil|Location2.X=1997.285mil|Location1.Y=427.144mil|Location2.Y=1480.771mil|Absolute=True">25</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16913494">42.9603mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1039.7mil|Location2.X=1406.734mil|Location1.Y=427.144mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1039.7mil|Location2.X=1406.734mil|Location1.Y=427.144mil|Location2.Y=1480.771mil|Absolute=True">26</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="12460581">31.6499mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=643.701mil|Location2.X=1295.339mil|Location1.Y=427.144mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=643.701mil|Location2.X=1295.339mil|Location1.Y=427.144mil|Location2.Y=1480.771mil|Absolute=True">27</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="17521505">44.5046mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1339.7mil|Location2.X=1618.173mil|Location1.Y=1412.928mil|Location2.Y=1871.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1339.7mil|Location2.X=1618.173mil|Location1.Y=1412.928mil|Location2.Y=1871.323mil|Absolute=True">32</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5880646">14.9368mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=66.772mil|Location2.X=1307.542mil|Location1.Y=1412.928mil|Location2.Y=1871.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=66.772mil|Location2.X=1307.542mil|Location1.Y=1412.928mil|Location2.Y=1871.323mil|Absolute=True">33</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="15987301">40.6077mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520mil|Location2.X=1607.542mil|Location1.Y=1037.086mil|Location2.Y=1492.755mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520mil|Location2.X=1607.542mil|Location1.Y=1037.086mil|Location2.Y=1492.755mil|Absolute=True">34</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="19336615">49.115mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1439.7mil|Location2.X=1880.315mil|Location1.Y=1105.513mil|Location2.Y=2226.379mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1439.7mil|Location2.X=1880.315mil|Location1.Y=1105.513mil|Location2.Y=2226.379mil|Absolute=True">35</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="14893502">37.8295mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.156mil|Location2.X=807.544mil|Location1.Y=1015.215mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.156mil|Location2.X=807.544mil|Location1.Y=1015.215mil|Location2.Y=2514.236mil|Absolute=True">4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="15491283">39.3479mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1039.701mil|Location2.X=1107.543mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1039.701mil|Location2.X=1107.543mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1839.7mil|Location2.X=1907.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1839.7mil|Location2.X=1907.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True">EN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=39.702mil|Location2.X=2086.81mil|Location1.Y=60.039mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=39.702mil|Location2.X=2086.81mil|Location1.Y=60.039mil|Location2.Y=2514.236mil|Absolute=True">GND</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=40mil|Location2.X=669.845mil|Location1.Y=60.04mil|Location2.Y=991.713mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=40mil|Location2.X=669.845mil|Location1.Y=60.04mil|Location2.Y=991.713mil|Absolute=True">NetB+1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="14565316">36.9959mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581mil|Location2.X=1823.25mil|Location1.Y=1569.643mil|Location2.Y=1871.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581mil|Location2.X=1823.25mil|Location1.Y=1569.643mil|Location2.Y=1871.323mil|Absolute=True">NetC10_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4834410">12.2794mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1475.124mil|Location2.X=1880.315mil|Location1.Y=2140.509mil|Location2.Y=2357.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1475.124mil|Location2.X=1880.315mil|Location1.Y=2140.509mil|Location2.Y=2357.465mil|Absolute=True">NetC11_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5604590">14.2357mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1536.208mil|Location2.X=1804mil|Location1.Y=2026.315mil|Location2.Y=2332.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1536.208mil|Location2.X=1804mil|Location1.Y=2026.315mil|Location2.Y=2332.465mil|Absolute=True">NetC14_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5538695">14.0683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=952.852mil|Location2.X=1403.126mil|Location1.Y=786.737mil|Location2.Y=1251.806mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=952.852mil|Location2.X=1403.126mil|Location1.Y=786.737mil|Location2.Y=1251.806mil|Absolute=True">NetC15_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7308383">18.5633mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=216.142mil|Location2.X=620.202mil|Location1.Y=1555.659mil|Location2.Y=1737.444mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=216.142mil|Location2.X=620.202mil|Location1.Y=1555.659mil|Location2.Y=1737.444mil|Absolute=True">NetC1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5700138">14.4784mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=328.283mil|Location2.X=559.115mil|Location1.Y=1569.643mil|Location2.Y=1871.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=328.283mil|Location2.X=559.115mil|Location1.Y=1569.643mil|Location2.Y=1871.323mil|Absolute=True">NetC5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3835850">9.7431mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1602.717mil|Location2.X=1884.334mil|Location1.Y=1569.643mil|Location2.Y=1721.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1602.717mil|Location2.X=1884.334mil|Location1.Y=1569.643mil|Location2.Y=1721.024mil|Absolute=True">NetC6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3403254">8.6443mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=685.472mil|Location2.X=848.249mil|Location1.Y=2135.512mil|Location2.Y=2221.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=685.472mil|Location2.X=848.249mil|Location1.Y=2135.512mil|Location2.Y=2221.89mil|Absolute=True">NetD1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1113681">2.8287mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=802.283mil|Location2.X=1010.001mil|Location1.Y=972.717mil|Location2.Y=1145.275mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=802.283mil|Location2.X=1010.001mil|Location1.Y=972.717mil|Location2.Y=1145.275mil|Absolute=True">NetD2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2751553">6.9889mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=80.709mil|Location2.X=837.716mil|Location1.Y=586.614mil|Location2.Y=915.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=80.709mil|Location2.X=837.716mil|Location1.Y=586.614mil|Location2.Y=915.472mil|Absolute=True">NetD2_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9008465">22.8815mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1178.781mil|Location2.X=1305.117mil|Location1.Y=1212.949mil|Location2.Y=1276.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1178.781mil|Location2.X=1305.117mil|Location1.Y=1212.949mil|Location2.Y=1276.22mil|Absolute=True">NetD3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="817016">2.0752mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1470.079mil|Location2.X=1641.813mil|Location1.Y=771.256mil|Location2.Y=869.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1470.079mil|Location2.X=1641.813mil|Location1.Y=771.256mil|Location2.Y=869.094mil|Absolute=True">NetD4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1342743">3.4106mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=190.945mil|Location2.X=1058.228mil|Location1.Y=586.614mil|Location2.Y=913.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=190.945mil|Location2.X=1058.228mil|Location1.Y=586.614mil|Location2.Y=913.661mil|Absolute=True">NetD6_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9880710">25.097mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=386.573mil|Location2.X=469.684mil|Location1.Y=395.609mil|Location2.Y=559.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=386.573mil|Location2.X=469.684mil|Location1.Y=395.609mil|Location2.Y=559.056mil|Absolute=True">NetD7_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1274551">3.2374mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1567.675mil|Location2.X=1650.786mil|Location1.Y=395.609mil|Location2.Y=559.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1567.675mil|Location2.X=1650.786mil|Location1.Y=395.609mil|Location2.Y=559.056mil|Absolute=True">NetD8_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1274551">3.2374mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=977.123mil|Location2.X=1060.236mil|Location1.Y=395.609mil|Location2.Y=559.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=977.123mil|Location2.X=1060.236mil|Location1.Y=395.609mil|Location2.Y=559.056mil|Absolute=True">NetD9_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1274559">3.2374mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=190.945mil|Location2.X=456.756mil|Location1.Y=685.04mil|Location2.Y=1171.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=190.945mil|Location2.X=456.756mil|Location1.Y=685.04mil|Location2.Y=1171.323mil|Absolute=True">NetJ6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5434513">13.8037mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=577.85mil|Location2.X=693.057mil|Location1.Y=851.941mil|Location2.Y=1200.563mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=577.85mil|Location2.X=693.057mil|Location1.Y=851.941mil|Location2.Y=1200.563mil|Absolute=True">NetQ1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3979335">10.1075mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=652.654mil|Location2.X=760.591mil|Location1.Y=851.941mil|Location2.Y=989.843mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=652.654mil|Location2.X=760.591mil|Location1.Y=851.941mil|Location2.Y=989.843mil|Absolute=True">NetQ1_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1321283">3.3561mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.156mil|Location2.X=655.655mil|Location1.Y=954.131mil|Location2.Y=1279.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.156mil|Location2.X=655.655mil|Location1.Y=954.131mil|Location2.Y=1279.303mil|Absolute=True">NetQ2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3188025">8.0976mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=503.935mil|Location2.X=816.183mil|Location1.Y=178.835mil|Location2.Y=403.642mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=503.935mil|Location2.X=816.183mil|Location1.Y=178.835mil|Location2.Y=403.642mil|Absolute=True">NetQ3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4557674">11.5765mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=360.589mil|Location2.X=618.109mil|Location1.Y=326.649mil|Location2.Y=596.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=360.589mil|Location2.X=618.109mil|Location1.Y=326.649mil|Location2.Y=596.102mil|Absolute=True">NetQ3_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6844847">17.3859mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1685.04mil|Location2.X=1997.285mil|Location1.Y=178.835mil|Location2.Y=403.642mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1685.04mil|Location2.X=1997.285mil|Location1.Y=178.835mil|Location2.Y=403.642mil|Absolute=True">NetQ4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4554853">11.5693mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1541.691mil|Location2.X=1799.213mil|Location1.Y=326.649mil|Location2.Y=596.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1541.691mil|Location2.X=1799.213mil|Location1.Y=326.649mil|Location2.Y=596.102mil|Absolute=True">NetQ4_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6813126">17.3053mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1094.488mil|Location2.X=1406.734mil|Location1.Y=178.835mil|Location2.Y=403.642mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1094.488mil|Location2.X=1406.734mil|Location1.Y=178.835mil|Location2.Y=403.642mil|Absolute=True">NetQ5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4556104">11.5725mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=951.139mil|Location2.X=1208.661mil|Location1.Y=326.649mil|Location2.Y=596.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=951.139mil|Location2.X=1208.661mil|Location1.Y=326.649mil|Location2.Y=596.102mil|Absolute=True">NetQ5_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6768646">17.1924mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1536.751mil|Location2.X=1618.173mil|Location1.Y=2026.315mil|Location2.Y=2190.199mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1536.751mil|Location2.X=1618.173mil|Location1.Y=2026.315mil|Location2.Y=2190.199mil|Absolute=True">NetR10_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1629655">4.1393mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=218.856mil|Location2.X=368.547mil|Location1.Y=2026.316mil|Location2.Y=2232.344mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=218.856mil|Location2.X=368.547mil|Location1.Y=2026.316mil|Location2.Y=2232.344mil|Absolute=True">NetR2_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2600085">6.6042mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=478.283mil|Location2.X=559.118mil|Location1.Y=1687.754mil|Location2.Y=1871.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=478.283mil|Location2.X=559.118mil|Location1.Y=1687.754mil|Location2.Y=1871.323mil|Absolute=True">NetR3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1828947">4.6455mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=418.856mil|Location2.X=569.846mil|Location1.Y=2026.316mil|Location2.Y=2232.344mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=418.856mil|Location2.X=569.846mil|Location1.Y=2026.316mil|Location2.Y=2232.344mil|Absolute=True">NetR6_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2615684">6.6438mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1787.339mil|Location2.X=1877.601mil|Location1.Y=1724.349mil|Location2.Y=1871.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1787.339mil|Location2.X=1877.601mil|Location1.Y=1724.349mil|Location2.Y=1871.323mil|Absolute=True">NetR8_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1509544">3.8342mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=478.283mil|Location2.X=559.118mil|Location1.Y=2026.316mil|Location2.Y=2080.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=478.283mil|Location2.X=559.118mil|Location1.Y=2026.316mil|Location2.Y=2080.773mil|Absolute=True">NetU1_13</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="500000">1.27mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=228.283mil|Location2.X=309.118mil|Location1.Y=2026.316mil|Location2.Y=2080.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=228.283mil|Location2.X=309.118mil|Location1.Y=2026.316mil|Location2.Y=2080.773mil|Absolute=True">NetU1_8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="500000">1.27mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1539.702mil|Location2.X=1607.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1539.702mil|Location2.X=1607.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">RX</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1639.702mil|Location2.X=1707.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1639.702mil|Location2.X=1707.544mil|Location1.Y=2446.394mil|Location2.Y=2514.236mil|Absolute=True">TX</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1639.7mil|Location2.X=1707.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1639.7mil|Location2.X=1707.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True">VN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1739.7mil|Location2.X=1807.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1739.7mil|Location2.X=1807.542mil|Location1.Y=1412.928mil|Location2.Y=1480.771mil|Absolute=True">VP</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=428.283mil|Location2.X=1151.639mil|Location1.Y=1816.866mil|Location2.Y=2080.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=428.283mil|Location2.X=1151.639mil|Location1.Y=1816.866mil|Location2.Y=2080.773mil|Absolute=True">X</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9361834">23.7791mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.717mil|Location2.X=1768.173mil|Location1.Y=1816.867mil|Location2.Y=2080.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.717mil|Location2.X=1768.173mil|Location1.Y=1816.867mil|Location2.Y=2080.773mil|Absolute=True">Y</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8410973">21.3639mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1013.717mil|Location2.X=1668.173mil|Location1.Y=1933.008mil|Location2.Y=2090.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Solid Connections\PBC2Asave.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1013.717mil|Location2.X=1668.173mil|Location1.Y=1933.008mil|Location2.Y=2090.757mil|Absolute=True">Z</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7993665">20.3039mm
+			</a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

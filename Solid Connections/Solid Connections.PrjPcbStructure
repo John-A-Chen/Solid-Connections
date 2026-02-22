@@ -1,0 +1,6 @@
+Record=TopLevelDocument|FileName=Top Level.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=Top Level.SchDoc|Designator=r|SchDesignator=r|FileName=UI_Interface.SchDoc|SheetNumber=5|SymbolType=Normal|RawFileName=UI_Interface.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Top Level.SchDoc|Designator=Sheet2|SchDesignator=Sheet2|FileName=Power.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Top Level.SchDoc|Designator=Sheet3|SchDesignator=Sheet3|FileName=Accelerometer.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=Accelerometer.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Top Level.SchDoc|Designator=Sheet4|SchDesignator=Sheet4|FileName=Filter.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=Filter.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=NoMainPathDocument|SourceDocument=Top Level.SchDoc|FileName=Charger.SchDoc|SheetNumber=6

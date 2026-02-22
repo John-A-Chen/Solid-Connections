@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=GND Pin=J4-MH
+Removed Pin From Net: NetName=GND Pin=J4-MH
+Removed Pin From Net: NetName=GND Pin=J4-MH
+Removed Pin From Net: NetName=GND Pin=J4-MH
+Change Component Footprint: Designator=J4 Old Footprint=ROS-71K101-400A5_V New Footprint=FP-5414373-1-MFG
+Change Component Comment : Designator=J4 Old Comment=71K101-400A5 New Comment=5414373-1
+Change Managed Component Library Link : Designator=J4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=D8A463A0-C0D2-4D7D-ADEE-221A469E3160 New ItemGUID=0D50AFBB-C714-4D1C-9B7D-87F427EB59C9 Old RevisionGUID=5C9F8072-9D4D-4A2A-96AD-71D23C991027 New RevisionGUID=275EA0C8-06AA-4334-93A3-536D03850CCD
+Change component parameters: Designator = "J4" ("J4"); Footprint = "ROS-71K101-400A5_V"; UniqueID = "\IRTDGOSP\JIDCEOAV" ("\IRTDGOSP\JIDCEOAV")
+Change component parameters (AddParameter): Name = "Body Material"; Value = "Zinc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Body Plating"; Value = "Nickel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Center Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = "BNC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Bronze"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Material"; Value = "Polymethylpentene"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fastening Type"; Value = "Bayonet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = "4GHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gender"; Value = "Female"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Color"; Value = "Silver"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Impedance"; Value = "50R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Polymethylpentene"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Resistance"; Value = "5GR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "25.4mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mating Cycles"; Value = "500"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Frequency"; Value = "4GHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Ports"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Frequency"; Value = "0 to 4 GHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "50"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PCB Mount Retention"; Value = "Without"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PCB Mounting Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Polarity"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Sealable"; Value = "No (Without)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "500V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire/Cable Type"; Value = "Coaxial"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J4-2
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Room: Name=r
+Added Room: Name=Sheet2
+Added Room: Name=Sheet3
+Added Room: Name=Sheet4
+Added Room: Name=Top Level

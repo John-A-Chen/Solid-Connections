@@ -1,0 +1,42 @@
+Change Component Footprint: Designator=C1 Old Footprint=FP-CC0805-0_85-MFG New Footprint=CAPC2013X95X45NL10T25
+Change Component Footprint: Designator=C2 Old Footprint=FP-CC0805-0_85-MFG New Footprint=CAPC2013X95X45NL10T25
+Change Component Footprint: Designator=C3 Old Footprint=FP-CC0805-0_85-MFG New Footprint=CAPC2013X95X45NL10T25
+Change Component Footprint: Designator=C4 Old Footprint=FP-CC0805-0_85-MFG New Footprint=CAPC2013X95X45NL10T25
+Change Component Footprint: Designator=C5 Old Footprint=FP-CC0805-0_85-MFG New Footprint=CAPC2013X95X45NL10T25
+Change Component Footprint: Designator=C6 Old Footprint=FP-CC0805-0_85-MFG New Footprint=CAPC2013X95X45NL10T25
+Change Component Footprint: Designator=R1 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R2 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R3 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R4 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R5 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R6 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R7 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R8 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R28 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Footprint: Designator=R29 Old Footprint=FP-RMCF0805-IPC_A New Footprint=FP-CRCW0603-e3-MFG
+Change Component Comment: Designator=C1 Old Comment=33 nF New Comment=33n
+Change Component Comment: Designator=C2 Old Comment=33 nF New Comment=33n
+Change Component Comment: Designator=C3 Old Comment=33 nF New Comment=33n
+Change Component Comment: Designator=C4 Old Comment=33 nF New Comment=33n
+Change Component Comment: Designator=C5 Old Comment=33 nF New Comment=33n
+Change Component Comment: Designator=C6 Old Comment=33 nF New Comment=33n
+Change Component Comment: Designator=R7 Old Comment=160kO New Comment=16k
+Change Component Comment: Designator=R8 Old Comment=160kO New Comment=16k
+Change Component Comment: Designator=R28 Old Comment=160kO New Comment=16k
+Change Component Comment: Designator=R29 Old Comment=160kO New Comment=16k
+Change Component Comment: Designator=R1 Old Comment=160kO New Comment=160k
+Change Component Comment: Designator=R2 Old Comment=160kO New Comment=160k
+Change Component Comment: Designator=R3 Old Comment=160kO New Comment=160k
+Change Component Comment: Designator=R4 Old Comment=160kO New Comment=160k
+Change Component Comment: Designator=R5 Old Comment=160kO New Comment=160k
+Change Component Comment: Designator=R6 Old Comment=160kO New Comment=160k
+Change Pin Designator/Name:  Old Designator=C2-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=C2-2 Old Name=2 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=C4-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=C4-2 Old Name=2 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=C5-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=C5-2 Old Name=2 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=C6-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=C6-2 Old Name=2 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=U3C-8 Old Name=OUT3 New Designator =IN4+ New Name=12
+Change Pin Designator/Name:  Old Designator=U3D-12 Old Name=IN4+ New Designator =IN2- New Name=6

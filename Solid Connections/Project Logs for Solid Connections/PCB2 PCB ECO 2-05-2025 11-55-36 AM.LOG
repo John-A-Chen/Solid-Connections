@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J12
+Added Pin To Net: NetName=NetJ?_1 Pin=J12-1
+Added Pin To Net: NetName=+3V3 Pin=J12-2
+Change Net Name : Old Net Name=NetJ?_1 New Net Name=NetJ12_1
+Added Room: Name=r
+Added Room: Name=Sheet2
+Added Room: Name=Sheet3
+Added Room: Name=Sheet4
+Added Room: Name=Top Level

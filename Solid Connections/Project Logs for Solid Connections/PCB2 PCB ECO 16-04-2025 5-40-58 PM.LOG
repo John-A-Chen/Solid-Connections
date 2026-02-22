@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=NetJ11_12 Pin=SW2-3
+Added Pin To Net: NetName=NetJ11_10 Pin=SW3-3
+Added Pin To Net: NetName=NetJ11_9 Pin=SW4-3
+Added Room: Name=r
+Added Room: Name=Sheet2
+Added Room: Name=Sheet3
+Added Room: Name=Sheet4
+Added Room: Name=Top Level

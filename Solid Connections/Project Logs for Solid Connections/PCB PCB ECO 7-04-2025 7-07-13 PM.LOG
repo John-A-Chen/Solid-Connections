@@ -1,0 +1,26 @@
+Removed Member From Class: ClassName=Top Level Member=J?
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found CAPC2013X95X45NL10T25
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Change Footprint: Footprint Not Found FP-CRCW0603-e3-MFG
+Add Component: Footprint Not Found AMPHENOL_20021221-00006C4LF
+Add Pin To Net: Unknown Pin: Pin J1-1
+Add Pin To Net: Unknown Pin: Pin J1-2
+Add Pin To Net: Unknown Pin: Pin J1-3
+Add Pin To Net: Unknown Pin: Pin J1-4
+Add Pin To Net: Unknown Pin: Pin J1-5
+Add Pin To Net: Unknown Pin: Pin J1-6
+Added Pin To Net: NetName=NetR7_1 Pin=U3-6
+Add Class Member: Failed to add class member : Component J1 20021221-00006C4LF

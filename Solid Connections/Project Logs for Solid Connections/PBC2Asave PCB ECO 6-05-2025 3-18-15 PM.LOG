@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=13 Pin=R19-1
+Removed Pin From Net: NetName=13 Pin=R20-1
+Removed Pin From Net: NetName=14 Pin=R22-1
+Removed Pin From Net: NetName=14 Pin=R23-1
+Removed Pin From Net: NetName=25 Pin=R24-1
+Removed Pin From Net: NetName=26 Pin=R26-1
+Removed Pin From Net: NetName=12 Pin=R27-1
+Removed Pin From Net: NetName=12 Pin=R28-1
+Removed Pin From Net: NetName=27 Pin=R29-1
+Removed Pin From Net: NetName=25 Pin=SW2-4
+Removed Pin From Net: NetName=26 Pin=SW3-4
+Removed Pin From Net: NetName=27 Pin=SW4-4
+Added Pin To Net: NetName=27 Pin=R19-1
+Added Pin To Net: NetName=27 Pin=R20-1
+Added Pin To Net: NetName=25 Pin=R22-1
+Added Pin To Net: NetName=25 Pin=R23-1
+Added Pin To Net: NetName=14 Pin=R24-1
+Added Pin To Net: NetName=12 Pin=R26-1
+Added Pin To Net: NetName=26 Pin=R27-1
+Added Pin To Net: NetName=26 Pin=R28-1
+Added Pin To Net: NetName=13 Pin=R29-1
+Added Pin To Net: NetName=14 Pin=SW2-4
+Added Pin To Net: NetName=12 Pin=SW3-4
+Added Pin To Net: NetName=13 Pin=SW4-4
+Added Room: Name=r
+Added Room: Name=Sheet2
+Added Room: Name=Sheet3
+Added Room: Name=Sheet4
+Added Room: Name=Top Level
