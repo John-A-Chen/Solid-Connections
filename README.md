@@ -1,17 +1,21 @@
+# Solid Connections  
+## Integrated Mechatronic System Design Project  
+
+---
+
 ## Overview  
 
-Solid Connections is a full stack mechatronic systems project integrating:
+Solid Connections is a multidisciplinary mechatronic systems project integrating:
 
 - Mechanical design  
-- Electronics and PCB development  
+- Custom PCB development using Altium Designer  
 - Embedded firmware  
-- Robotics software (ROS 2)  
 - Simulation and validation  
 - Professional engineering documentation  
 
-The project emphasises structured engineering practice, simulation driven validation, and clean repository management while developing a fully integrated system.
+The project emphasises structured engineering workflow, heavy iteration, design validation, and subsystem integration. A major focus was learning professional electronics design practices through multiple PCB revisions and debugging cycles.
 
-This repository documents the entire development lifecycle from early concept through modelling, simulation, integration, evaluation and refinement.
+This repository documents the full development lifecycle from concept through iterative refinement and final integration.
 
 ---
 
@@ -20,64 +24,53 @@ This repository documents the entire development lifecycle from early concept th
 1. Project Vision  
 2. System Architecture  
 3. Mechanical Design  
-4. Electronics Design  
+4. PCB Development in Altium  
 5. Embedded Software  
-6. Robotics Integration (ROS 2)  
-7. Simulation and Validation  
-8. Repository Structure  
-9. Engineering Workflow  
-10. System Evaluation Framework  
+6. Simulation and Validation  
+7. Iterative Design Process  
+8. Integration  
+9. Repository Structure  
+10. Engineering Workflow  
 11. Current Capabilities  
-12. Future Development  
-13. Lessons Learned  
+12. Lessons Learned  
 
 ---
 
 # 1. Project Vision  
 
-The objective of Solid Connections is to design and implement a complete mechatronic system that integrates mechanical, electrical and software components into a unified platform.
+The objective of Solid Connections was to design and build a fully functioning mechatronic system that integrates:
 
-Core goals:
+- Mechanical structure  
+- Custom electronics hardware  
+- Embedded software  
 
-- Develop a physically manufacturable system  
-- Design a custom PCB shield  
-- Program embedded firmware for sensing and control  
-- Integrate robotics software architecture  
-- Maintain professional documentation standards  
-- Validate design decisions using simulation  
-
-The project is built around integration and traceability, not just isolated subsystems.
+The project was not just about producing a working prototype, but about learning professional engineering workflow, documentation discipline, and iterative refinement.
 
 ---
 
 # 2. System Architecture  
 
-The system consists of the following subsystems:
+The system consists of three tightly integrated subsystems:
 
 ## Mechanical Subsystem
 - Parametric CAD modelling  
-- Assembly constraint validation  
-- Simulation driven refinement  
-- Manufacturability considerations  
+- Assembly validation  
+- Enclosure design  
+- Mounting interfaces for PCB and sensors  
 
 ## Electrical Subsystem
-- Custom shield PCB  
+- Custom designed shield PCB  
 - Sensor interfacing  
 - Power regulation  
-- Noise mitigation  
+- Signal conditioning  
 
 ## Embedded Subsystem
 - Microcontroller firmware  
-- Signal processing  
-- Control logic implementation  
+- Signal filtering  
+- Threshold logic  
+- Calibration routines  
 
-## Robotics Subsystem
-- ROS 2 workspace configuration  
-- Simulation integration  
-- Teleoperation exploration  
-- Human safety concepts  
-
-All subsystems are version controlled and developed iteratively.
+Subsystems were co designed rather than developed independently.
 
 ---
 
@@ -85,120 +78,151 @@ All subsystems are version controlled and developed iteratively.
 
 Mechanical development included:
 
-- Full parametric CAD modelling  
+- Parametric part modelling  
+- Assembly constraint testing  
 - Iterative geometry refinement  
-- Assembly interference testing  
-- Design for fabrication  
+- Interference checking  
+- Mounting feature optimisation for PCB alignment  
 
-## Simulation Work
+Multiple iterations were required to:
 
-Flow simulation was conducted to analyse airflow performance:
+- Improve manufacturability  
+- Reduce assembly misalignment  
+- Ensure reliable electrical mounting  
+- Improve enclosure robustness  
 
-- Cell count optimisation  
-- Refinement level comparison  
-- Boundary condition validation  
-- Performance comparison across design variants  
-- Fluid cell and solid interaction analysis  
-
-Simulation results were used to guide geometry refinement rather than relying on intuition alone.
-
-## Documentation
-
-- Drawing packs prepared  
-- Revision control maintained  
-- Engineering notes recorded per iteration  
+Engineering drawings were updated per revision to maintain traceability.
 
 ---
 
-# 4. Electronics Design  
+# 4. PCB Development in Altium  
 
-A custom PCB shield was developed to interface sensors with a microcontroller platform.
+A major component of this project was designing a custom PCB using **Altium Designer**.
 
-## Key Work Completed
+## Schematic Capture
 
-- Schematic design  
-- Component selection  
-- PCB layout optimisation  
-- Routing refinement  
-- Signal path validation  
-- Power distribution design  
+- Creation of full system schematic  
+- Component selection and footprint matching  
+- Pin mapping verification  
+- Power rail planning  
 
-Design considerations included:
+Several schematic revisions were required due to:
 
-- Noise reduction  
-- Trace routing efficiency  
-- Mounting compatibility  
-- Mechanical enclosure integration  
+- Incorrect pin assignments  
+- Component footprint mismatches  
+- Signal routing conflicts  
+- Power distribution adjustments  
+
+## PCB Layout
+
+The PCB layout process involved:
+
+- Manual component placement optimisation  
+- Trace routing refinement  
+- Ground plane management  
+- Clearance rule configuration  
+- Design rule checking  
+
+### Iteration Highlights
+
+The PCB went through many iterations to resolve:
+
+- Routing congestion  
+- Trace width adjustments  
+- Power integrity issues  
+- Component spacing constraints  
+- Mechanical fit within enclosure  
+- Mounting hole alignment  
+- Silkscreen corrections  
+
+Design rule violations were systematically identified and resolved using Altium’s DRC tools.
+
+This iterative loop of:
+
+1. Design  
+2. Check  
+3. Modify  
+4. Re check  
+
+was repeated multiple times before finalising the board.
 
 ---
 
 # 5. Embedded Software  
 
-Firmware development focused on:
+Firmware development included:
 
 - Sensor data acquisition  
-- Signal filtering  
-- Threshold based logic  
-- Calibration routines  
+- Signal filtering implementation  
+- Threshold based detection logic  
+- Calibration procedures  
 - Serial debugging  
 
-Algorithms were iteratively tuned and validated through controlled testing.
-
-The embedded system forms the bridge between physical sensing and higher level system logic.
+Firmware changes were often required after PCB testing, reinforcing the iterative hardware software co design process.
 
 ---
 
-# 6. Robotics Integration (ROS 2)
+# 6. Simulation and Validation  
 
-A ROS 2 workspace was configured and structured properly within the repository.
+Simulation supported mechanical refinement.
 
-## Workspace Setup
+## Flow Analysis
 
-- Colcon build system  
-- Environment sourcing  
-- Install folder management  
-- Branch based development  
-
-## Integration Concepts Explored
-
-- Teleoperation control  
-- 3D spatial targeting concepts  
-- Digital twin environment concepts  
-- Human robot safety zones using depth sensing  
-- Gripper integration into simulation  
-
-Proper repository restructuring was completed to ensure:
-
-- Clean project submission  
-- Correct branch usage  
-- Removal of misplaced home directory builds  
-- Standardised setup instructions for teammates  
-
----
-
-# 7. Simulation and Validation  
-
-Simulation played a central role in design validation.
-
-## Mechanical Simulation
-- Flow simulation  
 - Cell refinement comparison  
-- Fluid to solid interaction evaluation  
+- Boundary condition validation  
+- Fluid interaction with geometry  
+- Performance comparison across iterations  
 
-## System Validation
-- Functional subsystem testing  
-- Integration validation  
-- Behavioural evaluation from user perspective  
-
-All major design decisions were supported by either simulation or structured reasoning.
+Simulation results informed geometry changes rather than relying purely on intuition.
 
 ---
 
-# 8. Repository Structure  
+# 7. Iterative Design Process  
+
+A defining feature of this project was iteration.
+
+## Mechanical Iteration
+- Mounting hole repositioning  
+- Enclosure resizing  
+- Clearance adjustments  
+- Geometry simplification  
+
+## Electrical Iteration
+- Schematic corrections  
+- PCB rerouting  
+- Design rule compliance refinement  
+- Mechanical fit corrections  
+
+## Firmware Iteration
+- Threshold tuning  
+- Noise filtering improvements  
+- Calibration adjustments  
+
+Each subsystem influenced the others, requiring repeated refinement cycles.
+
+This reinforced the reality that professional engineering is rarely linear.
+
+---
+
+# 8. Integration  
+
+Integration included:
+
+- PCB installation into enclosure  
+- Mechanical alignment verification  
+- Firmware testing on physical hardware  
+- Debugging subsystem interactions  
+- Refinement based on real world behaviour  
+
+Hardware testing exposed small design assumptions that required correction.
+
+---
+
+# 9. Repository Structure  
 
 ```
 
-Zh-EMS2/
+Solid-Connections/
 │
 ├── CAD/
 │   ├── Parts/
@@ -207,6 +231,7 @@ Zh-EMS2/
 │   └── Simulation/
 │
 ├── Electronics/
+│   ├── Altium_Project/
 │   ├── Schematics/
 │   ├── PCB/
 │   └── BOM/
@@ -216,114 +241,54 @@ Zh-EMS2/
 │   ├── Libraries/
 │   └── Calibration/
 │
-├── ROS2/
-│   ├── src/
-│   ├── install/
-│   └── build/
-│
 ├── Documentation/
 │   ├── Aims/
-│   ├── Resources/
 │   ├── Evaluation/
-│   └── Team_Process/
+│   └── Iteration_Notes/
 │
 └── README.md
 
 ```
 
-The structure supports scalability and traceability across all engineering domains.
+All major revisions were documented to maintain traceability.
 
 ---
 
-# 9. Engineering Workflow  
+# 10. Engineering Workflow  
 
-This project emphasises disciplined engineering practice:
+This project emphasised professional engineering practice:
 
-- Git version control  
-- Branch based feature isolation  
-- Revision documentation  
-- Structured evaluation criteria  
-- Iterative prototyping  
+- Iterative design cycles  
+- Design rule checking in Altium  
+- Version control for CAD and firmware  
+- Documentation per revision  
 - Simulation before fabrication  
 
-Team workflow improvements included:
-
-- Proper repository cloning  
-- Workspace relocation from incorrect directories  
-- Clear setup instructions  
-- Standardised environment sourcing  
-
----
-
-# 10. System Evaluation Framework  
-
-The system is evaluated from the user perspective using staged criteria:
-
-## P (Minimum Viable Product)
-- Core functionality operational  
-- Basic integration complete  
-
-## C
-- Improved robustness  
-- Reduced failure points  
-
-## D
-- Strong subsystem integration  
-- Stable behaviour  
-
-## HD
-- Seamless operation  
-- Clean user interaction  
-- Reliable performance  
-
-## Perfect
-- Fully integrated  
-- Robust to edge cases  
-- Demonstrates engineering polish  
-- Clear documentation and validation evidence  
-
-Evaluation is integration focused, not just component focused.
+The workflow reflected real world hardware development rather than a single pass design.
 
 ---
 
 # 11. Current Capabilities  
 
-The system currently demonstrates:
+The system demonstrates:
 
 - Integrated mechanical and electronic subsystems  
-- Custom PCB design  
+- Custom PCB designed in Altium  
 - Functional embedded firmware  
-- Structured ROS 2 workspace  
-- Simulation validated geometry  
-- Clean repository structure  
-- Full documentation support  
+- Simulation informed mechanical refinement  
+- Documented iterative development process  
 
 ---
 
-# 12. Future Development  
+# 12. Lessons Learned  
 
-Planned improvements include:
+Key lessons from Solid Connections:
 
-- Expanded autonomy features  
-- Improved human robot interaction safety  
-- Higher fidelity simulation  
-- Digital twin environment integration  
-- Multi user collaborative control concepts  
-- Performance optimisation  
-- Full integration testing under stress conditions  
-
----
-
-# 13. Lessons Learned  
-
-Key engineering lessons from this project:
-
-- Integration complexity exceeds subsystem complexity  
-- Simulation prevents expensive design mistakes  
-- Repository discipline saves significant time  
-- Environment setup consistency matters  
-- Clear documentation accelerates collaboration  
-- Mechanical, electrical and software decisions must be co designed  
+- PCB design requires multiple revision cycles  
+- Mechanical and electrical systems must be co designed  
+- Design rule checking is critical  
+- Hardware software debugging exposes hidden assumptions  
+- Iteration is not failure, it is engineering  
 
 ---
 
@@ -332,10 +297,10 @@ Key engineering lessons from this project:
 Solid Connections represents a complete multidisciplinary engineering effort combining:
 
 - Mechanical design  
-- Electronics engineering  
+- Professional PCB design in Altium  
 - Embedded programming  
-- Robotics software  
 - Simulation  
 - Structured documentation  
+- Extensive iterative refinement  
 
-The repository captures not only the final system but the engineering reasoning, iteration and validation that led to it.
+This repository captures not only the final system, but the engineering process and iteration required to achieve a working, integrated design.
