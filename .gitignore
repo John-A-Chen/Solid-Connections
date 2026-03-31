@@ -1,0 +1,14 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Generic temporary files
+*.tmp
+*.bak
+
+# VS Code browse database artifacts
+.vscode/browse.vc.db*
+.vscode/
